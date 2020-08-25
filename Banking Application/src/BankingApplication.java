@@ -4,7 +4,7 @@ public class BankingApplication {
 
 	public static void main(String[] args) {
 		BankAccount obj1 = new BankAccount("Ryan", "RA0001");
-		obj1.showMenu();
+		obj1.showMenu(); //ffgfgfgfgfgf
 
 	}
 
@@ -24,7 +24,7 @@ class BankAccount
 		customerId = cid;
 	}
 	
-	void deposit(int amount)
+	public void deposit(int amount)
 	{
 		if (amount != 0)
 		{
@@ -33,7 +33,7 @@ class BankAccount
 		}
 	}
 	
-	void withdraw(int amount)
+	public void withdraw(int amount)
 	{
 		if (amount != 0)
 		{
@@ -42,7 +42,7 @@ class BankAccount
 		}
 	}
 	
-	void getPreviousTransaction()
+	public void getPreviousTransaction()
 	{
 		if (previousTransaction > 0)
 		{
@@ -58,7 +58,7 @@ class BankAccount
 		}
 	}
 	
-	void showMenu()
+	public void showMenu()
 	{
 		char option = '\0';
 		Scanner scanner = new Scanner(System.in);
